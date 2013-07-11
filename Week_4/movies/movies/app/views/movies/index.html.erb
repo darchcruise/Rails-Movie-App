@@ -1,0 +1,17 @@
+<h1>Index Page</h1>
+
+
+
+<ul>
+<% @films.each do |film| %>
+<a href="/movies/<%=film.id %>"><%= film.title %></a>
+<br/>
+
+<% end %>
+</ul>
+
+<a href="/movies/new">Add a New Movie</a>
+
+
+
+

@@ -1,0 +1,11 @@
+<h1>Show Page</h1>
+
+<p>Tile: <%= @film.title %></p>
+<p>Year: <%= @film.year %></p>
+<p>Plot: <%= @film.plot %></p>
+<p>Mpaa Rating: <%= @film.mpaa_rating %></p>
+<p>User Rating: <%= @film.user_rating %></p>
+
+<br/>
+
+<a href="/movies/<%=@film.id %>/edit">Edit</a>

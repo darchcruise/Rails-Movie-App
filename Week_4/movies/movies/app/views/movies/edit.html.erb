@@ -1,0 +1,16 @@
+<h1>Edit Page</h1>
+
+
+<form action="/movies/<%= @film.id %>" method="Put">
+  <input title="title" placeholder="title"> <br/>
+  <input year="year" placeholder="year"> <br/>
+  <input plot="plot" placeholder="plot"> <br/>
+  <input mpaa_rating="mpaa_rating" placeholder="mpaa rating"> <br/>
+  <input user_rating="user_rating" placeholder="user rating"> <br/>
+  <button>Submit</button>
+
+</form>
+
+<br/>
+
+<a href="/movies">Back to Movies</a>
