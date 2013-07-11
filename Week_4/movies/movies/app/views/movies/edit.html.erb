@@ -1,14 +1,13 @@
 <h1>Edit Page</h1>
 
 
-<form action="/movies/<%= @film.id %>" method="Put">
-  <input title="title" placeholder="title"> <br/>
-  <input year="year" placeholder="year"> <br/>
-  <input plot="plot" placeholder="plot"> <br/>
-  <input mpaa_rating="mpaa_rating" placeholder="mpaa rating"> <br/>
-  <input user_rating="user_rating" placeholder="user rating"> <br/>
+<form action="/movies/<%= @film.id %>" method="put">
+  <input type="text" name="title" value="<%= @film.title %>"> <br/>
+  <input type="text" name="year" value="<%= @film.year %>"> <br/>
+  <input type="text" name="plot" value="<%= @film.plot %>"> <br/>
+  <input type="text" name="mpaa_rating" value="<%= @film.mpaa_rating %>"> <br/>
+  <input type="number" name="user_rating" value="<%= @film.user_rating %>"> <br/>
   <button>Submit</button>
-
 </form>
 
 <br/>
